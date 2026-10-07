@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this data, please cite it as below."
+title: "Hermès Resale Index: open data"
+type: dataset
+authors:
+  - name: "BirkinBagStock"
+    website: "https://birkinbagstock.com"
+url: "https://birkinbagstock.com"
+repository: "https://github.com/softdevfz/hermes-resale-index"
+license: CC-BY-4.0
+date-released: "2026-10-07"
+keywords: [hermes, birkin, kelly, constance, luxury resale, handbags, prices]

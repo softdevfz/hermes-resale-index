@@ -1,0 +1,165 @@
+{
+ "slug": "hermes-resale-october-2026",
+ "title": "Hermès Resale Report — October 2026",
+ "metadata": {
+  "cutoff": "2026-10-02T11:31:08.261615+00:00",
+  "read_finished_at": "2026-10-02T11:31:20.642588+00:00",
+  "atomic_snapshot": false,
+  "source_project": "birkinbagstock-prod",
+  "active_priced_handbag_ids": 6988,
+  "active_dealers": 46,
+  "universe": "Covered listing IDs; not authenticated unique physical bags or the entire market",
+  "currencies": "Asking amounts in stored USD; auction hammer/low ratios in matching native currencies",
+  "languages": [
+   "en",
+   "es",
+   "fr"
+  ]
+ },
+ "insights": [
+  {
+   "id": "repeat_listing_trend",
+   "text": "The median individual asking-price changes for the same listing were 0.0%, 0.0%, 0.0% over 30, 60 and 90 days, with 1,798, 1,445 and 1,266 matched IDs. The 30-day basket median changed 6.5% and recorded coverage changed -22.8% across baskets of 4,281 and 3,307 IDs; these USD observations do not establish appreciation or market stock changes.",
+   "n": {
+    "30": 1798,
+    "60": 1445,
+    "90": 1266,
+    "daily_basket_30d_start": 4281,
+    "daily_basket_30d_end": 3307
+   },
+   "metric_type": "asking",
+   "method": "Join listing_id across two dates, calculate 100 × (final price / initial price − 1), and take the median of those individual changes; the daily basket uses all registered listings on each date.",
+   "caveat": "Changes in USD, without original price history or historical FX. The logger defaults to Birkin and does not store style; a mislabeled historical Kelly exists. Matching selects persistent listings, mixes resellers, and does not measure realized profitability. Coverage, additions, removals, and corrections alter the basket; the recorded number is not the market stock."
+  },
+  {
+   "id": "size_curve",
+   "text": "Birkin 25 median asking is $32,000 versus $18,684 for Birkin 35, a 71.3% gap, with 1038 and 762 listing IDs. The smaller-size premium also appears within standard Togo, but these cohorts still differ in condition, colour and year.",
+   "n": {
+    "Birkin 25": 1038,
+    "Birkin 30": 1330,
+    "Birkin 35": 762,
+    "Kelly 25": 739,
+    "Kelly 28": 764,
+    "Kelly 32": 543
+   },
+   "metric_type": "asking",
+   "method": "Medians and quartiles by model+size across all active priced bags, including special variants; additional Togo contrast within the standard subset.",
+   "caveat": "The overall curve mixes leather, condition, color, year, hardware, and variants. Togo groups exclude special variants/HSS, but also do not adjust for remaining characteristics. Asking price does not equal realized price or a causal size premium."
+  },
+  {
+   "id": "currency_gap",
+   "text": "Birkin 25 Togo median asking is $30,985 for USD-origin listings and $24,083 for AUD-origin listings, a 28.7% gap, with 265 and 37 IDs. Currency is not seller geography, and this unadjusted USD comparison does not establish net arbitrage.",
+   "n": {
+    "USD": 265,
+    "AUD": 37
+   },
+   "metric_type": "asking",
+   "method": "Group by model+size+leather and original_currency; compare the median of the price field in USD, retaining groups with n≥15. Unknown currency is excluded from the comparison.",
+   "caveat": "Original currency does not identify the seller's country or location; regions represents service zones. There are 1,427 unknown currencies in the active sample. Stored conversions may originate from different dates; only current FX is available, not historical. Shipping, commissions, taxes, and adjustments for condition/color/year are missing: this is not executable net arbitrage."
+  },
+  {
+   "id": "dispersion",
+   "text": "Among the five most frequent model-size-leather-hardware cohorts, Birkin 35 Togo palladium asking prices run from $13,466 at the tenth percentile to $33,500 at the ninetieth, a 148.8% gap across 120 IDs. Matching those four fields does not make the bags identical in colour, condition or year.",
+   "n": {
+    "Birkin 30 togo gold": 191,
+    "Birkin 25 togo gold": 179,
+    "Birkin 25 togo palladium": 164,
+    "Birkin 30 togo palladium": 161,
+    "Birkin 35 togo palladium": 120
+   },
+   "metric_type": "asking",
+   "method": "Select the five most numerous model+size+leather+hardware combinations; interpolated p10 and p90 per listing and spread 100×(p90/p10−1). Reseller median comparison restricted to n≥15 per reseller within the spec.",
+   "caveat": "Matching spec does not mean an identical bag: color, condition, year, provenance, and services vary. Hardware is also inferred from the title. Dispersion reflects listings across resellers, without authentication or physical deduplication across sites."
+  },
+  {
+   "id": "exotic_premium",
+   "text": "Standard Birkin 25 exotic median asking is $85,850 versus $29,096 for regular leather, a 195.1% premium, with 177 and 676 IDs. Species, condition and colour are not held constant.",
+   "n": {
+    "exotic": 177,
+    "regular_leather": 676
+   },
+   "metric_type": "asking",
+   "method": "Within the standard subset, classify crocodile, alligator, ostrich, and lizard as exotic according to the normalized leather field; compare medians by model+size against identified regular leather.",
+   "caveat": "The mix of species, color, condition, year, and reseller varies. No adjustment is made for rarity or quality; the descriptive difference in asking price does not measure return or causal effect of the material. Unknown material is excluded."
+  },
+  {
+   "id": "retirement_proxy",
+   "text": "In the retained-document mature-arrival cohort, 45 of 155 Birkin 25 IDs were retired within 30 days, or 29.0%. Retirement is not a sale, and document deletion and monitoring rollout limit this proxy.",
+   "n": {
+    "Birkin 25": {
+     "eligible": 155,
+     "retired_within30": 45
+    },
+    "Birkin 30": {
+     "eligible": 160,
+     "retired_within30": 44
+    },
+    "Birkin 35": {
+     "eligible": 103,
+     "retired_within30": 26
+    }
+   },
+   "metric_type": "retirement_proxy",
+   "method": "Cohort of retained bag documents with a valid price and created_at between 2026-08-09T06:18:21.107277+00:00 and 2026-09-02T11:31:08.261615+00:00; count stale_reason=source_missing_two_successful_runs and stale_at−created_at≤30 days, over all retained eligible additions, whether active or retired.",
+   "caveat": "Retirement ≠ sale: it may indicate delisting or absence from the feed. The denominator does not reconstruct the historical universe: deletions, tracking rollout, and retained documents condition the result; it is not an estimated market survival rate. Kelly added in September lacks a mature 30-day cohort; its short ages among retired listings do not prove higher liquidity."
+  },
+  {
+   "id": "dealer_concentration",
+   "text": "The five largest covered dealers account for 52.7% of 6,988 priced active handbag IDs across 46 dealers. This is coverage concentration, not global market or sales share.",
+   "n": {
+    "top5": 3684,
+    "total": 6988,
+    "merchants": 46
+   },
+   "metric_type": "asking_inventory",
+   "method": "Count active priced IDs by merchant_slug; divide the total of the top five by all active priced bag IDs in the snapshot.",
+   "caveat": "Share of BirkinBagStock coverage, not sales share or global market share. The same physical bag may appear in multiple listings; stated availability does not guarantee executable inventory."
+  },
+  {
+   "id": "auction_years",
+   "text": "In the observed 2026 Hermès handbag auction sample, 90 of 111 lots sold and median realised hammer was 100.0% of the low estimate, with 90 ratios. This small partial-year multi-model sample excludes buyer fees and is not market-wide sell-through.",
+   "n": {
+    "all_years_offered": 251,
+    "all_years_sold": 209,
+    "latest_year_offered": 111,
+    "latest_year_ratio": 90
+   },
+   "metric_type": "realised_hammer",
+   "method": "Join standalone lots and sales results_lots; exclude 22 audited titles unrelated to handbags/fakes/ambiguous items. Closing year; non-null hammer indicates sold. Sell-through = sold / offered; median of 100×hammer/estimate_low among sold lots with positive low estimate, always in the same native currency.",
+   "caveat": "Observed sample of multiple Hermès models, not solely Birkin nor all auctions in the market. Auctionet predominates and one Drouot lot is included. Hammer excludes buyer's premium and other costs. Early years do not reach n≥15; 2026 is partial. Ratios do not require FX and do not prove systematically low estimates."
+  },
+  {
+   "id": "hardware",
+   "text": "Standard Birkin 35 Togo gold-hardware median asking is $21,500 versus $18,500 for palladium, a 16.2% gap, with 94 and 120 IDs. Condition, colour and dealer mix are not adjusted.",
+   "n": {
+    "gold": 94,
+    "palladium": 120
+   },
+   "metric_type": "asking",
+   "method": "Compare gold/palladium medians by size in standard Togo Birkin; use hardware field or explicit title cues. Exclude unknown or ambiguous hardware.",
+   "caveat": "Hardware inferred from titles, without physical verification. Color, condition, age, and resellers vary; does not represent a causal hardware premium."
+  },
+  {
+   "id": "neutral_colours",
+   "text": "Recognised neutral Birkin 30 Togo median asking is $25,770 versus $22,681 for recognised bright colours, a 13.6% gap, with 197 and 46 IDs. Missing colour data and differences in condition and hardware limit the comparison.",
+   "n": {
+    "neutral": 197,
+    "bright": 46
+   },
+   "metric_type": "asking",
+   "method": "In standard Togo Birkin by size, neutrals = black/noir, gold, etoupe, and etain; brights = explicit colors recognized by the classifier. Compare medians between recognized groups, without assigning every non-neutral to bright.",
+   "caveat": "There are 3,573 unknown colors among active priced IDs. Partial classifier coverage, condition, hardware, year, and reseller mix preclude attributing causality to color; not all shades are comparable."
+  },
+  {
+   "id": "attributed_boutique_benchmark",
+   "text": "PurseBop’s 2026-03-28 reported U.S. boutique benchmark implies a 114.8% gap to Birkin 25 Togo median asking (n=480). This specialist-media reference is not an official current Hermès quote or realised profit.",
+   "n": {
+    "Birkin 25": 480,
+    "Birkin 30": 530
+   },
+   "metric_type": "asking_vs_reported_retail",
+   "method": "Divide the current standard Togo median by the benchmark published by the media outlet and subtract one; this is neither a transaction nor an active official quote.",
+   "caveat": "Specialized media outlet, not an official Hermès source; benchmark predates the cutoff, before sales tax. Condition, age, and boutique access differ; does not demonstrate realizable profit."
+  }
+ ]
+}

@@ -18,6 +18,8 @@ Hermès auction results.
 - Birkin 20 is dominated by limited Faubourg, Sellier and exotic pieces, so its median is far above the larger sizes.
 - Not affiliated with Hermès. We do not authenticate bags.
 
+Also on Hugging Face: https://huggingface.co/datasets/birkinbagstock/hermes-resale-index
+
 Live numbers, methodology and per-model pages: https://birkinbagstock.com · API and MCP: https://birkinbagstock.com/developers ·
 Embeddable live price widget: https://birkinbagstock.com/widgets
 

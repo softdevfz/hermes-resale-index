@@ -1,7 +1,7 @@
 # Hermès Resale Index: open data
 
 Monthly aggregates of **pre-owned Hermès handbag asking prices** (Birkin, Kelly, Constance), compiled by
-[BirkinBagStock](https://birkinbagstock.com), an independent index of live listings from 70+ resellers worldwide, plus
+[BirkinBagStock](https://birkinbagstock.com), an independent index of live listings from 130 resellers worldwide, plus
 Hermès auction results.
 
 | File | What it is |
@@ -19,6 +19,15 @@ Hermès auction results.
 - Not affiliated with Hermès. We do not authenticate bags.
 
 Also on Hugging Face: https://huggingface.co/datasets/birkinbagstock/hermes-resale-index
+
+## Live data pages
+
+The CSV is a monthly snapshot. The same data, updated daily:
+
+- [Hermès Birkin and Kelly asking prices by country](https://birkinbagstock.com/market/by-country)
+- [Today's market: live listings by model, size and leather](https://birkinbagstock.com/market/today)
+- [Hermès auction results](https://birkinbagstock.com/auctions/results), with [Birkin](https://birkinbagstock.com/auctions/results/birkin) and [Kelly](https://birkinbagstock.com/auctions/results/kelly) results
+- [Upcoming auctions with Hermès lots](https://birkinbagstock.com/auctions)
 
 Live numbers, methodology and per-model pages: https://birkinbagstock.com · API and MCP: https://birkinbagstock.com/developers ·
 Embeddable live price widget: https://birkinbagstock.com/widgets

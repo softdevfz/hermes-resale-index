@@ -6,6 +6,8 @@ Hermès auction results.
 
 | File | What it is |
 |---|---|
+| `data/2026-11/asking_prices_by_model_size_leather.csv` | Live asking prices on 1 Nov 2026 (13,607 priced handbag listings, 126 resellers), by model and size, and model, size and leather: live listings, resellers, median, P25, P75, P10 and P90 in USD |
+| `data/2026-11/report-summary.json` | Headline numbers from the [Hermès Resale Report, November 2026](https://birkinbagstock.com/reports/hermes-resale-november-2026), with sample sizes and caveats |
 | `data/2026-10/asking_prices_by_model_size_leather.csv` | Live asking prices on 7 Oct 2026, by model, model and size, and model, size and leather: number of live listings, number of resellers, median, P25 and P75 in USD |
 | `data/2026-10/report-summary.json` | Findings from the [Hermès Resale Report, October 2026](https://birkinbagstock.com/reports/hermes-resale-october-2026), with sample sizes and caveats |
 
@@ -15,6 +17,7 @@ Hermès auction results.
 - Prices in other currencies are converted to USD with that day's reference rates.
 - A cohort is published only if it has **10 or more live listings from 3 or more resellers**. Condition, colour, year and
   hardware are **not** held constant inside a cohort.
+- The November file adds P10 and P90 and has no model-wide (all sizes) rows; size and size-plus-leather rows follow the same gate.
 - Birkin 20 is dominated by limited Faubourg, Sellier and exotic pieces, so its median is far above the larger sizes.
 - Not affiliated with Hermès. We do not authenticate bags.
 

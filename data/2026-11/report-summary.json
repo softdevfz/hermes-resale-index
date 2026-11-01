@@ -1,0 +1,51 @@
+{
+  "title": "Hermès Resale Report — November 2026",
+  "slug": "hermes-resale-november-2026",
+  "metadata": {
+    "month": "2026-11",
+    "asof": "2026-11-01",
+    "cutoff": "2026-11-01T05:32:51.419782+00:00",
+    "history_exclusive_cutoff": "2026-11-01T00:00:00+00:00",
+    "read_finished_at": "2026-11-01T05:32:59.676669+00:00",
+    "atomic_snapshot": false,
+    "source_project": "birkinbagstock-prod",
+    "active_priced_handbag_ids": 13607,
+    "active_dealers": 126,
+    "universe": "Covered listing IDs; not authenticated unique physical bags or the entire market",
+    "currencies": "Stored USD asking prices; auction native currencies and price bases kept separate",
+    "languages": [
+      "en"
+    ],
+    "inventory_clock": "Current state at acquisition; no historical reconstruction",
+    "method": "Available listing IDs with finite positive USD asking prices; exclude all-nines placeholder prices and accessories, and identify special variants/HSS separately using the October normalization rules. Medians and quartiles describe covered listings. Counts are not unique authenticated physical bags.",
+    "caveats": "Asking prices are not completed sales. Condition, age, colour, leather, hardware and dealer mix are not fully adjusted; coverage changes are not market growth. Stored USD conversions may reflect different FX dates. Streams are not an atomic snapshot; current availability cannot be reconstructed from this extraction.",
+    "chart_files": [
+      "charts/size_curve.png",
+      "charts/trend.png",
+      "charts/dealer_auction_coverage.png",
+      "charts/auction_results.png"
+    ],
+    "evidence": "source_manifest.json and tables.json in the acquisition directory"
+  },
+  "stats": [
+    {
+      "value": "13,607",
+      "label": "live priced handbag listings"
+    },
+    {
+      "value": "126",
+      "label": "resellers with priced listings"
+    },
+    {
+      "value": "+79.5%",
+      "label": "Birkin 25 asks over Birkin 35 (median)"
+    },
+    {
+      "value": "+0.0%",
+      "label": "median same-listing asking change in 90 days"
+    }
+  ],
+  "cohort_gate": "n>=10 and >=3 merchant slugs; valid-priced active standard handbag IDs",
+  "cohorts_n": 86,
+  "publication": "Public snapshot of the Hermès Resale Report, November 2026 (https://birkinbagstock.com/reports/hermes-resale-november-2026). Asking prices, not sales."
+}

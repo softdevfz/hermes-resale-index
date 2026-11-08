@@ -1,0 +1,302 @@
+{
+ "schema_version": 2,
+ "label": "baseline-2026-11-08",
+ "as_of": "2026-11-08",
+ "captured_at": "2026-11-08T07:58:08.836345+00:00",
+ "currency": "USD",
+ "methodology": {
+  "population": "available == true; inventory.public_market_eligible and listing_style; public merchant flags; Birkin/Kelly; finite positive USD asks",
+  "merchant_gate": "Config.MERCHANTS: active and generated_pages and not regional_only; unknown sources allowed as on public routes",
+  "currency": "Normalized/display USD, including converted asks; missing currency defaults to USD as in price_history_service. FX movements can appear as drops.",
+  "n": "Priced active listing documents, not unique physical bags; cross-merchant duplicates are not removed. POA/unpriced excluded from n and price statistics; reported separately.",
+  "quantiles": "Linear interpolation at (n-1)*q (type 7); median is the ordinary sample median. Filters match widget; its nearest-index percentile estimator differs.",
+  "drop_window": "UTC calendar-day window (as_of minus days, as_of], not a rolling-hour window. Compare observed USD pairs only when the earlier day is on/after the window boundary. Append today's live ask as in price_history_service.",
+  "drop_count": "Distinct currently priced active listings with at least one observed decrease; a later increase does not erase an earlier decrease. History prices use price_history_service whole-dollar normalization.",
+  "median_drop_pct": "Per listing, largest single observed-pair decrease in the window; median of these positive percentages across listings that dropped. Not cumulative discount or net change.",
+  "drop_denominators": "pct_of_priced uses n; pct_of_comparable uses listings with at least one within-window pair. No observed drop does not establish an unchanged ask when history is incomplete.",
+  "full_window_history": "Earliest valid observed day is on/before window boundary; the latest ask is appended today. Observation gaps remain possible.",
+  "comparison": "Repeated cross-sections, not a matched-basket index or causal estimate of Black Friday; inventory composition, condition, leather and FX can change.",
+  "recorder_scope": "Baseline history was captured by a capped Birkin-only recorder. All-style capture is prepared for the November 9 deployment, not assumed already active. No-history rates are null.",
+  "material_cut": "At least 3% between successive daily observations in the window. Use positive source_price in matching source_currency on both observations, otherwise USD fallback when source metadata is missing. Conflicting/changing explicit source currencies are incomparable; no cross-currency native comparison.",
+  "material_basis": "Each listing counts once: native if any material native pair exists, otherwise USD-only. Median uses the largest native material pair when present, otherwise largest USD-only material pair. USD-only counts can still include FX; threshold is not proof of a seller promotion."
+ },
+ "events": {
+  "black_friday": "2026-11-27",
+  "cyber_monday": "2026-11-30"
+ },
+ "history_windows_days": [
+  7,
+  14
+ ],
+ "material_threshold_pct": 3.0,
+ "planned_all_style_capture_from": "2026-11-09",
+ "cohorts": {
+  "birkin_25": {
+   "style": "birkin",
+   "size": 25,
+   "n": 2175,
+   "eligible_n": 2175,
+   "unpriced_n": 0,
+   "merchant_count": 109,
+   "unknown_merchant_n": 0,
+   "median_usd": 30500.0,
+   "p25_usd": 25251.0,
+   "p75_usd": 38066.0,
+   "drops": {
+    "7": {
+     "status": "observed",
+     "material_n": 50,
+     "material_native_n": 50,
+     "material_usd_only_n": 0,
+     "pct_material_of_comparable": 2.8,
+     "median_material_drop_pct": 5.0,
+     "dropped_n": 996,
+     "comparable_history_n": 1783,
+     "full_window_history_n": 1749,
+     "pct_of_priced": 45.79,
+     "pct_of_comparable": 55.86,
+     "median_drop_pct": 0.42
+    },
+    "14": {
+     "status": "observed",
+     "material_n": 92,
+     "material_native_n": 92,
+     "material_usd_only_n": 0,
+     "pct_material_of_comparable": 4.95,
+     "median_material_drop_pct": 5.26,
+     "dropped_n": 1034,
+     "comparable_history_n": 1859,
+     "full_window_history_n": 1556,
+     "pct_of_priced": 47.54,
+     "pct_of_comparable": 55.62,
+     "median_drop_pct": 0.55
+    }
+   }
+  },
+  "birkin_30": {
+   "style": "birkin",
+   "size": 30,
+   "n": 2252,
+   "eligible_n": 2253,
+   "unpriced_n": 1,
+   "merchant_count": 119,
+   "unknown_merchant_n": 0,
+   "median_usd": 23445.5,
+   "p25_usd": 17835.75,
+   "p75_usd": 32000.0,
+   "drops": {
+    "7": {
+     "status": "observed",
+     "material_n": 95,
+     "material_native_n": 95,
+     "material_usd_only_n": 0,
+     "pct_material_of_comparable": 5.07,
+     "median_material_drop_pct": 5.94,
+     "dropped_n": 1030,
+     "comparable_history_n": 1873,
+     "full_window_history_n": 1795,
+     "pct_of_priced": 45.74,
+     "pct_of_comparable": 54.99,
+     "median_drop_pct": 0.54
+    },
+    "14": {
+     "status": "observed",
+     "material_n": 130,
+     "material_native_n": 130,
+     "material_usd_only_n": 0,
+     "pct_material_of_comparable": 6.68,
+     "median_material_drop_pct": 5.91,
+     "dropped_n": 1061,
+     "comparable_history_n": 1947,
+     "full_window_history_n": 1619,
+     "pct_of_priced": 47.11,
+     "pct_of_comparable": 54.49,
+     "median_drop_pct": 0.55
+    }
+   }
+  },
+  "birkin_35": {
+   "style": "birkin",
+   "size": 35,
+   "n": 1250,
+   "eligible_n": 1250,
+   "unpriced_n": 0,
+   "merchant_count": 104,
+   "unknown_merchant_n": 0,
+   "median_usd": 17237.0,
+   "p25_usd": 14001.25,
+   "p75_usd": 28000.0,
+   "drops": {
+    "7": {
+     "status": "observed",
+     "material_n": 52,
+     "material_native_n": 52,
+     "material_usd_only_n": 0,
+     "pct_material_of_comparable": 5.1,
+     "median_material_drop_pct": 6.0,
+     "dropped_n": 592,
+     "comparable_history_n": 1020,
+     "full_window_history_n": 989,
+     "pct_of_priced": 47.36,
+     "pct_of_comparable": 58.04,
+     "median_drop_pct": 0.55
+    },
+    "14": {
+     "status": "observed",
+     "material_n": 73,
+     "material_native_n": 73,
+     "material_usd_only_n": 0,
+     "pct_material_of_comparable": 6.86,
+     "median_material_drop_pct": 5.56,
+     "dropped_n": 623,
+     "comparable_history_n": 1064,
+     "full_window_history_n": 854,
+     "pct_of_priced": 49.84,
+     "pct_of_comparable": 58.55,
+     "median_drop_pct": 0.59
+    }
+   }
+  },
+  "kelly_25": {
+   "style": "kelly",
+   "size": 25,
+   "n": 1571,
+   "eligible_n": 1571,
+   "unpriced_n": 0,
+   "merchant_count": 103,
+   "unknown_merchant_n": 0,
+   "median_usd": 27513.0,
+   "p25_usd": 22995.0,
+   "p75_usd": 32242.5,
+   "drops": {
+    "7": {
+     "status": "no_comparable_history",
+     "material_n": 0,
+     "material_native_n": 0,
+     "material_usd_only_n": 0,
+     "pct_material_of_comparable": null,
+     "median_material_drop_pct": null,
+     "dropped_n": 0,
+     "comparable_history_n": 0,
+     "full_window_history_n": 0,
+     "pct_of_priced": null,
+     "pct_of_comparable": null,
+     "median_drop_pct": null
+    },
+    "14": {
+     "status": "no_comparable_history",
+     "material_n": 0,
+     "material_native_n": 0,
+     "material_usd_only_n": 0,
+     "pct_material_of_comparable": null,
+     "median_material_drop_pct": null,
+     "dropped_n": 0,
+     "comparable_history_n": 0,
+     "full_window_history_n": 0,
+     "pct_of_priced": null,
+     "pct_of_comparable": null,
+     "median_drop_pct": null
+    }
+   }
+  },
+  "kelly_28": {
+   "style": "kelly",
+   "size": 28,
+   "n": 1385,
+   "eligible_n": 1385,
+   "unpriced_n": 0,
+   "merchant_count": 105,
+   "unknown_merchant_n": 0,
+   "median_usd": 19990.0,
+   "p25_usd": 15595.0,
+   "p75_usd": 26079.0,
+   "drops": {
+    "7": {
+     "status": "no_comparable_history",
+     "material_n": 0,
+     "material_native_n": 0,
+     "material_usd_only_n": 0,
+     "pct_material_of_comparable": null,
+     "median_material_drop_pct": null,
+     "dropped_n": 0,
+     "comparable_history_n": 0,
+     "full_window_history_n": 0,
+     "pct_of_priced": null,
+     "pct_of_comparable": null,
+     "median_drop_pct": null
+    },
+    "14": {
+     "status": "no_comparable_history",
+     "material_n": 0,
+     "material_native_n": 0,
+     "material_usd_only_n": 0,
+     "pct_material_of_comparable": null,
+     "median_material_drop_pct": null,
+     "dropped_n": 0,
+     "comparable_history_n": 0,
+     "full_window_history_n": 0,
+     "pct_of_priced": null,
+     "pct_of_comparable": null,
+     "median_drop_pct": null
+    }
+   }
+  },
+  "all_birkin": {
+   "style": "birkin",
+   "size": null,
+   "n": 6045,
+   "eligible_n": 6046,
+   "unpriced_n": 1,
+   "merchant_count": 126,
+   "unknown_merchant_n": 0,
+   "median_usd": 25842.0,
+   "p25_usd": 18000.0,
+   "p75_usd": 34170.0,
+   "drops": {
+    "7": {
+     "status": "observed",
+     "material_n": 203,
+     "material_native_n": 203,
+     "material_usd_only_n": 0,
+     "pct_material_of_comparable": 4.07,
+     "median_material_drop_pct": 5.57,
+     "dropped_n": 2782,
+     "comparable_history_n": 4990,
+     "full_window_history_n": 4841,
+     "pct_of_priced": 46.02,
+     "pct_of_comparable": 55.75,
+     "median_drop_pct": 0.54
+    },
+    "14": {
+     "status": "observed",
+     "material_n": 304,
+     "material_native_n": 304,
+     "material_usd_only_n": 0,
+     "pct_material_of_comparable": 5.85,
+     "median_material_drop_pct": 5.56,
+     "dropped_n": 2888,
+     "comparable_history_n": 5198,
+     "full_window_history_n": 4294,
+     "pct_of_priced": 47.78,
+     "pct_of_comparable": 55.56,
+     "median_drop_pct": 0.55
+    }
+   }
+  }
+ },
+ "caveats": [
+  "Asking prices, not completed sales; not evidence of returns or a holiday discount.",
+  "Current survivors only; sold/delisted listings excluded without inferring a sale.",
+  "Coverage is observational and can miss intraday changes, coupons, checkout-only offers and unrecorded cuts.",
+  "USD conversions can move without a merchant changing the native ask.",
+  "Tax, shipping, duties and buyer-specific final costs are excluded.",
+  "Not affiliated with Hermès; no stock, authenticity or investment guarantee."
+ ],
+ "history_first_recorded_day": "20260530",
+ "publication": {
+  "article": "https://birkinbagstock.com/blog/birkin-black-friday-2026-price-tracker",
+  "publisher": "BirkinBagStock",
+  "not_affiliated_with": "Hermès",
+  "price_basis": "advertised asking prices, not completed sales"
+ }
+}

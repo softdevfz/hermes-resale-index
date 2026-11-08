@@ -22,7 +22,7 @@ Hermès auction results.
 - Birkin 20 is dominated by limited Faubourg, Sellier and exotic pieces, so its median is far above the larger sizes.
 - Not affiliated with Hermès. We do not authenticate bags.
 
-The Black Friday file measures **advertised asks before the shopping weekend**, not sales or Hermès promotions. Kelly cut rates are `null` in the baseline because daily price history for Kelly starts on 9 Nov 2026; a null rate is not evidence that prices held.
+The Black Friday file measures **advertised asks before the shopping weekend**, not sales or Hermès promotions. Kelly cut rates are `null` in the baseline because the daily price recorder covered Birkin only until then (all-style capture is planned from 9 Nov 2026); a null rate is not evidence that prices held.
 
 Also on Hugging Face: https://huggingface.co/datasets/birkinbagstock/hermes-resale-index
 

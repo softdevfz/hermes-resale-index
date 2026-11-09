@@ -1,0 +1,41 @@
+sale_end_date,house,sale_slug,model,currency,price_basis,lots_with_result,lots_sold,sell_through_pct,median_price,p25_price,p75_price,max_price,results_page
+2026-11-02,Rossini,rossini-186078,Other,EUR,hammer,3,2,66.7,3050,1725,4375,5700,https://birkinbagstock.com/auctions/rossini-186078
+2026-11-01,Estim Nation,estim-nation-179746,Other,EUR,hammer,3,3,100.0,300,210,1000,1700,https://birkinbagstock.com/auctions/estim-nation-179746
+2026-10-29,Maurice Auction,maurice-auction-182824,Other,EUR,hammer,7,6,85.7,2125,1588,5062,11200,https://birkinbagstock.com/auctions/maurice-auction-182824
+2026-10-29,Ader,ader-181790,Other,EUR,hammer,4,3,75.0,455,403,910,1365,https://birkinbagstock.com/auctions/ader-181790
+2026-10-29,Ader,ader-181790,Kelly,EUR,hammer,5,5,100.0,3380,3250,3510,10400,https://birkinbagstock.com/auctions/ader-181790
+2026-10-26,Penelope's Fashion Auction,penelope-s-fashion-auction-186341,Kelly,EUR,hammer,3,1,33.3,420,,,420,https://birkinbagstock.com/auctions/penelope-s-fashion-auction-186341
+2026-10-25,Collauctions,collauctions-186690,Other,EUR,hammer,4,0,0.0,,,,,https://birkinbagstock.com/auctions/collauctions-186690
+2026-10-25,Collauctions,collauctions-186690,Kelly,EUR,hammer,5,0,0.0,,,,,https://birkinbagstock.com/auctions/collauctions-186690
+2026-10-25,Collauctions,collauctions-186690,Herbag,EUR,hammer,7,0,0.0,,,,,https://birkinbagstock.com/auctions/collauctions-186690
+2026-10-25,Collauctions,collauctions-186690,Garden Party,EUR,hammer,4,1,25.0,1210,,,1210,https://birkinbagstock.com/auctions/collauctions-186690
+2026-10-25,Collauctions,collauctions-186690,Evelyne,EUR,hammer,5,0,0.0,,,,,https://birkinbagstock.com/auctions/collauctions-186690
+2026-10-25,Collauctions,collauctions-186690,Birkin,EUR,hammer,5,1,20.0,10460,,,10460,https://birkinbagstock.com/auctions/collauctions-186690
+2026-10-22,Artcurial,artcurial-it6607,Other,EUR,premium,5,5,100.0,993,530,1986,2913,https://birkinbagstock.com/auctions/artcurial-it6607
+2026-10-18,Guette’s Auction,guettes-auction-185921,Kelly,EUR,hammer,5,1,20.0,6700,,,6700,https://birkinbagstock.com/auctions/guettes-auction-185921
+2026-10-15,Maurice Auction,maurice-auction-184922,Kelly,EUR,hammer,4,4,100.0,370,296,402,440,https://birkinbagstock.com/auctions/maurice-auction-184922
+2026-10-15,Icon Auction,icon-auction-182946,Kelly,EUR,hammer,3,1,33.3,200,,,200,https://birkinbagstock.com/auctions/icon-auction-182946
+2026-10-14,Osenat,osenat-183627,Kelly,EUR,hammer,3,3,100.0,512,512,512,512,https://birkinbagstock.com/auctions/osenat-183627
+2026-10-11,Expertisez Enchères,expertisez-encheres-182765,Kelly,EUR,hammer,7,0,0.0,,,,,https://birkinbagstock.com/auctions/expertisez-encheres-182765
+2026-10-11,Expertisez Enchères,expertisez-encheres-182765,Herbag,EUR,hammer,9,7,77.8,1740,1700,1995,2100,https://birkinbagstock.com/auctions/expertisez-encheres-182765
+2026-10-11,Expertisez Enchères,expertisez-encheres-182765,Birkin,EUR,hammer,4,2,50.0,10960,10745,11175,11390,https://birkinbagstock.com/auctions/expertisez-encheres-182765
+2026-10-09,Sotheby's,sothebys-pf2681,Other,EUR,premium,9,9,100.0,10240,8960,10880,23040,https://birkinbagstock.com/auctions/sothebys-pf2681
+2026-10-09,Sotheby's,sothebys-pf2681,Kelly,EUR,premium,45,45,100.0,15360,11520,25600,166400,https://birkinbagstock.com/auctions/sothebys-pf2681
+2026-10-09,Sotheby's,sothebys-pf2681,Birkin,EUR,premium,43,43,100.0,20480,12800,26880,140800,https://birkinbagstock.com/auctions/sothebys-pf2681
+2026-10-06,Christie's,christies-24051,Picotin,HKD,premium,5,5,100.0,28160,23040,33280,33280,https://birkinbagstock.com/auctions/christies-24051
+2026-10-06,Christie's,christies-24051,Other,HKD,premium,12,10,83.3,29440,24640,43840,70400,https://birkinbagstock.com/auctions/christies-24051
+2026-10-06,Christie's,christies-24051,Lindy,HKD,premium,7,7,100.0,53760,51200,65920,243200,https://birkinbagstock.com/auctions/christies-24051
+2026-10-06,Christie's,christies-24051,Kelly,HKD,premium,44,40,90.9,89600,64000,131200,384000,https://birkinbagstock.com/auctions/christies-24051
+2026-10-06,Christie's,christies-24051,Herbag,HKD,premium,3,3,100.0,23040,18560,24320,25600,https://birkinbagstock.com/auctions/christies-24051
+2026-10-06,Christie's,christies-24051,Constance,HKD,premium,12,11,91.7,64000,52480,118400,166400,https://birkinbagstock.com/auctions/christies-24051
+2026-10-06,Christie's,christies-24051,Bolide,HKD,premium,9,6,66.7,65920,53760,75200,128000,https://birkinbagstock.com/auctions/christies-24051
+2026-10-06,Christie's,christies-24051,Birkin,HKD,premium,26,25,96.2,102400,89600,121600,1024000,https://birkinbagstock.com/auctions/christies-24051
+2026-10-01,Bonhams,bonhams-32327,Other,GBP,hammer,5,5,100.0,1400,500,1400,4600,https://birkinbagstock.com/auctions/bonhams-32327
+2026-10-01,Bonhams,bonhams-32327,Kelly,GBP,hammer,10,5,50.0,5500,1000,9500,12000,https://birkinbagstock.com/auctions/bonhams-32327
+2026-10-01,Bonhams,bonhams-32327,Constance,GBP,hammer,5,1,20.0,4600,,,4600,https://birkinbagstock.com/auctions/bonhams-32327
+2026-10-01,Bonhams,bonhams-32327,Birkin,GBP,hammer,11,7,63.6,12000,7250,14500,19000,https://birkinbagstock.com/auctions/bonhams-32327
+2026-07-08,Artcurial,artcurial-mc6028,Other,EUR,premium,6,6,100.0,3906,3012,5296,9003,https://birkinbagstock.com/auctions/artcurial-mc6028
+2026-07-08,Artcurial,artcurial-mc6028,Kelly,EUR,premium,19,19,100.0,11254,7282,15557,27804,https://birkinbagstock.com/auctions/artcurial-mc6028
+2026-07-08,Artcurial,artcurial-mc6028,Constance,EUR,premium,3,3,100.0,6620,5826,6620,6620,https://birkinbagstock.com/auctions/artcurial-mc6028
+2026-07-08,Artcurial,artcurial-mc6028,Bolide,EUR,premium,3,3,100.0,4634,3774,9599,14564,https://birkinbagstock.com/auctions/artcurial-mc6028
+2026-07-08,Artcurial,artcurial-mc6028,Birkin,EUR,premium,9,9,100.0,14564,8606,21184,119160,https://birkinbagstock.com/auctions/artcurial-mc6028
